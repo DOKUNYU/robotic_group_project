@@ -17,7 +17,6 @@ def yellow_detect(img):
     for i in range(len(contours)):
         approx = cv2.approxPolyDP(contours[i], 0.1 * cv2.arcLength(contours[i], True), True) # 多边形逼近
         cv2.drawContours(img, [approx], 0, (255, 255, 0), 1) 
-        #if(approx)
         pixel_left_up = approx[0][0]
         pixel_right_up = approx[3][0]
         pixel_right_down = approx[2][0]
