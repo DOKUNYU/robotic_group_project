@@ -58,8 +58,8 @@ for i in range(3):
 
 
 #生成自定义彩色盒子尺寸
-boxHalfLength = 0.0135
-boxHalfWidth = 0.0135
+boxHalfLength = 0.0132
+boxHalfWidth = 0.0132
 boxHalfHeight = 0.02
 #盒子的碰撞体形状
 BoxCollisionId = p.createCollisionShape(p.GEOM_BOX,
@@ -79,7 +79,7 @@ pointId=p.createVisualShape(p.GEOM_BOX,
                                   rgbaColor=[0,0,1,1])
 #生成物体
 pos1=[0.3, 0, 0.02]
-pos2=[0.35, -0.01, 0.02]
+pos2=[0.38, 0.08, 0.02]
 pos3=[0.4, -0.16, 0.02]
 p.createMultiBody(baseMass=0.5,
                     baseCollisionShapeIndex=BoxCollisionId,
@@ -142,7 +142,7 @@ while True:
         tx_vec = np.array([rotation_matrix[0],rotation_matrix[3],rotation_matrix[6]])
         ty_vec = np.array([rotation_matrix[1],rotation_matrix[4],rotation_matrix[7]])
         tz_vec = np.array([rotation_matrix[2],rotation_matrix[5],rotation_matrix[8]])
-        print(ee_pose_cartesian)
+        # print(ee_pose_cartesian)
 
         base_pos = np.array(ee_pose_cartesian)
         target_pos = base_pos + 0.1*tz_vec  
