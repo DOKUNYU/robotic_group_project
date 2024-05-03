@@ -3,6 +3,7 @@ This is the code for the **Theory and Technology of Robotics group project**
 ## installation
 ### enviroment and dependencies
 If you do not already have conda installed in ubuntu, please install conda first.
+
 create conda environment and activate the environment
 ```
 conda create -n pybu python=3.9
