@@ -1,5 +1,6 @@
 # robotic_group_project
 This is the code for the **Theory and Technology of Robotics group project**
+机器人理论小组作业，基于Linux+Pybullet+opencv的颜色识别抓取机械臂
 ## installation
 ### enviroment and dependencies
 If you do not already have conda installed in ubuntu, please install conda first.
